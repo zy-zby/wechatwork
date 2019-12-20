@@ -1,0 +1,52 @@
+/* pages/fooddetails/fooddetails.wxss */
+.container{
+  display: flex;
+  flex-flow: column;
+}
+text{
+  width: 670rpx;
+}
+.food{
+  width: 670rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.img{
+  width: 670rpx;
+  height: auto;
+  margin-bottom: 40rpx;
+}
+.box{
+  display: flex;
+  flex-flow: column;
+}
+.title{
+  margin-top: 40rpx;
+  width: 670rpx;
+}
+.tips{
+  display: flex;
+  width: 670rpx;
+  margin-bottom: 20rpx;
+}
+.st{
+  width: 50%;
+  text-align: left;
+  font-size: 24rpx;
+}
+.sale{
+  width: 50%;
+  color: darkgray;
+  text-align: right;
+  font-size: 24rpx;
+}
+.box{
+  font-size: 24rpx;
+}
+.addcar{
+  background: rgb(255, 199, 0);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 34rpx;
+}

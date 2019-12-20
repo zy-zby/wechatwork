@@ -1,0 +1,19 @@
+<!--pages/service/service.wxml-->
+<!--<text>饮食计划，线下门店</text>-->
+<view class="userbox">
+    <text class="boxtitle">最近使用</text>
+    <view class="boxcontain">
+      <view class="boxmain" bindtap="categoryTap">
+        <image class="boximg" src="../../image/fenleixuanze.png"></image>
+        <text>分类选择</text>
+      </view>
+      <view class="boxmain" bindtap="dietPlanTap">
+        <image class="boximg" src="../../image/yinshijihua.png"></image>
+        <text>饮食计划</text>
+      </view>
+      <view class="boxmain">
+      </view>
+      <view class="boxmain">
+      </view>
+    </view>
+  </view>

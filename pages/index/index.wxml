@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="container">
+<view class="banner">
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular="true"> 
+        <block wx:for="{{bannerarr}}"> 
+          <swiper-item> 
+              <image src="{{item}}" class="slide-image" mode='widthFix'/> 
+          </swiper-item> 
+        </block> 
+  </swiper>
+</view>
+<view class="tuijian">
+  <text>今天吃什么呢？</text>
+  <view class="tuijianbox">
+    <image src="../../image/zhou1.jpg" class="tjimg" bindtap="fooddetail"></image>
+    <view class="tuijiantxt">
+      <text>今天天气较凉，\n来碗粥暖暖身子吧！\n　　　　　--《粥品》</text>
+    </view>
+  </view>
+</view>
+<view class="jihua">
+  <text>今日计划</text>
+  <view class="jihuabox">
+    <view class="jihuabt">
+      <image src="../../image/jihua1.jpg" class="jhbtimg"></image>
+      <view class="jhbtxt">
+        <text>膳食均衡计划</text>
+      </view>
+    </view>
+    <view class="jhbjd">
+      <image src="../../image/jihuajindu.jpg" mode='widthFix' class="jihuajindu"></image>
+      <text class="jhbjdt">已完成2天/共7天</text>
+    </view>
+    <view class="jhbt1">膳食均衡计划</view>
+    <view class="jhbt2">吃均衡饮食</view>
+  </view>
+  <button class="daka">今日打卡</button>
+</view>
+<view class="rmjihua">
+  <text>热门计划</text>
+  <view class="rmjhbox">
+    <view class="cbox">
+      <view class="rmlbox">
+        <image class="rmjhimg" src="../../image/jihua1.jpg"></image>
+        <text>膳食均衡计划</text>
+        <text class="rmjht2">7天|每天约__卡路里</text>
+      </view>
+      <view class="rmrbox">
+        <image class="rmjhimg" src="../../image/jihua2.jpg"></image>
+        <text>饭后甜点计划</text>
+        <text class="rmjht2">14天|每天约__卡路里</text>
+      </view>
+    </view>
+    <view class="cbox">
+      <view class="rmlbox">
+        <image class="rmjhimg" src="../../image/jihua3.jpg"></image>
+        <text>早餐计划</text>
+        <text class="rmjht2">7天|每天约__卡路里</text>
+      </view>
+      <view class="rmrbox">
+        <image class="rmjhimg" src="../../image/jihua4.jpg"></image>
+        <text>下午茶计划</text>
+        <text class="rmjht2">31天|每天约__卡路里</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weather">
+  <view class="weatherbox">
+    <text>{{weatherData.date}}</text>
+    <!--<text>{{weatherData.weather}}</text>
+    <text>{{weatherData.wind}}</text>-->
+  </view>
+  <view class="weatherbox">
+    <text>{{weatherData.temperature}}</text>
+    <!--<image class="weatherimg" src="{{weatherData.dayPictureUrl}}"></image>
+    <image class="weatherimg" src="{{weatherData.nightPictureUrl}}"></image>-->
+  </view>
+</view>
+</view>
+

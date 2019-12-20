@@ -1,0 +1,29 @@
+/* pages/service/service.wxss */
+/* userinfo */
+.userbox {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 20rpx 40rpx 20rpx 40rpx;
+  padding-bottom: 20rpx;
+  border-radius: 15rpx;
+}
+.boxcontain {
+  display: flex;
+}
+.boxmain {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28rpx;
+  width: 25%;
+}
+.boxtitle {
+  margin: 20rpx;
+}
+.boximg {
+  width: 84rpx;
+  height: 84rpx;
+  margin: 0 auto 20rpx auto;
+}

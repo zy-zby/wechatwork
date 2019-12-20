@@ -1,0 +1,66 @@
+<!--pages/settlement/settlement.wxml-->
+<view class="contain">
+  <view>订单已完成</view>
+  <view>请选择收货地址</view>
+  <view class="shopbox">
+    <view class="shopboxh">红豆粥</view>
+    <view class="shopcontain">
+      <view class="scbox">
+        <image src="../../image/zhou1.jpg"></image>
+        <view class="scbtext">
+          <view class="scbh">
+            <view>红豆粥</view>
+            <view class="scbprice">¥7</view>
+          </view>
+          <view class="scbq">x2</view>
+        </view>
+      </view>
+      <view class="scbox">
+        <image src="../../image/zhou1.jpg"></image>
+        <view class="scbtext">
+          <view class="scbh">
+            <view>红豆粥</view>
+            <view class="scbprice">¥7</view>
+          </view>
+          <view class="scbq">x2</view>
+        </view>
+      </view>
+    </view>
+    <view class="totalprice">总价格：<text>¥777</text></view>
+    <!--<view class="carbutton">
+      <view style="border-right:0;">联系商家</view>
+      <view>致电商家</view>
+    </view>-->
+  </view>
+  <view class="shopbox">
+    <view class="shopboxh">配送信息</view>
+    <view class="shbtable">
+      <view>配送服务</view>
+      <view class="shbtvalue">蜂鸟专送</view>
+    </view>
+    <view class="shbtable">
+      <view>期望时间</view>
+      <view class="shbtvalue">立即配送</view>
+    </view>
+    <view class="shbtable">
+      <view>配送地址</view>
+      <view class="shbtvalue">江西师范大学</view>
+    </view>
+  </view>
+  <view class="shopbox">
+    <view class="shopboxh">配送信息</view>
+    <view class="shbtable">
+      <view>配送服务</view>
+      <view class="shbtvalue">蜂鸟专送</view>
+    </view>
+    <view class="shbtable">
+      <view>期望时间</view>
+      <view class="shbtvalue">立即配送</view>
+    </view>
+    <view class="shbtable">
+      <view>配送地址</view>
+      <view class="shbtvalue">江西师范大学</view>
+    </view>
+  </view>
+</view>
+

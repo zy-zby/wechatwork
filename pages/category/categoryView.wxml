@@ -1,0 +1,47 @@
+<!--categoryView.wxml-->
+<import src="../../common/wxmlTemplate.wxml" />
+
+<!--顶部分类导航条-->  
+<view class="">
+  <view class="navbar">
+    <view class="nav-1">  
+    	<scroll-view scroll-x="true" class="nav-1-left" scroll-left="{{scrollLeftValue}}" wx:if="{{!isPickerShow}}">
+      	<view wx:for="{{categories}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" 
+          wx:key="unique" bindtap="navbarTap">{{item}}</view>
+    	</scroll-view>
+    	<view class="nav-1-left" wx:if="{{isPickerShow}}">
+      	<view class="item left2Font">{{categories[currentTab]}}</view>
+    	</view> 
+    <!-- <view class="blankblock"></view> -->
+    	<button class="navbarBtn" bindtap="navbarBtnClick">
+      	<image src="../../image/down.png" class="navbarBtn icon {{isPickerShow ? 'active' : ''}}"></image>
+    	</button> 
+  	</view>
+
+  	<view class="picker" wx:if="{{isPickerShow}}">
+    	<view class="spitLine"></view>
+    	<view class="picker-contain">
+      	<view wx:for="{{categories}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" 
+          wx:key="unique" bindtap="navbarTap">{{item}}</view>
+    	</view>
+  	</view>
+  </view>
+
+  <swiper class="itemContainer" bindchange="swiperChange" current="{{currentTab}}">
+		<block wx:for="{{categories}}" wx:for-item="cItem" wx:key="unique">
+			<swiper-item>
+				<scroll-view scroll-y="true" bindscrolltolower="downloadMoreItem" bindscrolltoupper="updateItem">
+  				<view class="child" bindtap="itemTap" wx:for="{{commodities[currentTab]}}" 
+            data-idx="{{index}}" wx:key="unique" wx:if="{{item.category == cItem || cItem == '全部'}}">
+  				  <template is="itemInfoTemplate" data="{{item}}"/>
+					</view>
+  			</scroll-view>
+			</swiper-item>
+		</block>
+  </swiper>
+
+	<!-- 透明遮盖层 -->
+  <view class="picker-contain-bg {{isPickerShow? 'show' : ''}}" wx:if="{{isBgNeed}}" bindtap="bgTap"></view>
+
+</view>
+

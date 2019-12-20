@@ -1,0 +1,80 @@
+/* pages/settlement/settlement.wxss */
+.contain{
+  width: 670rpx;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+}
+.shopbox{
+  width: 670rpx;
+  margin-top: 40rpx;
+  text-align: left;
+  border-radius: 15rpx;
+}
+.shopboxh{
+  padding: 10rpx;
+  height: 50rpx;
+  font-size: 34rpx;
+  border-bottom: 1rpx darkgray solid;
+}
+.shopcontain{
+  margin-top: 10rpx;
+  background: white;
+  width: 670rpx;
+  display: flex;
+  flex-direction: column;
+}
+.scbox{
+  padding: 10rpx;
+  display: flex;
+}
+.scbh{
+  display: flex;
+  height: 60rpx;
+  width: 480rpx;
+}
+.scbh view{
+  width: 50%;
+}
+.scbprice{
+  text-align: right;
+}
+.scbq{
+  color: darkgray;
+}
+.scbox image{
+  width: 190rpx;
+  height: 100rpx;
+}
+.scbtext{
+  display: flex;
+  flex-flow: column;
+}
+.shbtable{
+  display: flex;
+}
+.shbtable view{
+  width: 50%;
+  color: darkgray;
+  font-size: 26rpx;
+}
+.shbtvalue{
+  color: black!important;
+  text-align: right;
+}
+.carbutton{
+  display: flex;
+}
+.carbutton view{
+  width: 50%;
+  text-align: center;
+  background: white;
+  border: 0.5rpx solid darkgray; 
+}
+.totalprice{
+  text-align: right;
+}
+.totalprice text{
+  color: red;
+  font-size: 34rpx;
+}

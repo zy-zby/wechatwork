@@ -1,0 +1,60 @@
+/* pages/myhome/myhome.wxss */
+/* userinfo */
+page{
+  background: -webkit-linear-gradient(top,rgb(255, 199, 0) 300rpx,rgb(248, 248, 248) 300rpx);
+}
+.userinfo {
+  display: flex;
+  align-items: center;
+  margin: 20rpx;
+}
+.userinfo-message {
+  display: flex;
+  flex-direction: column;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color:black;
+  font-weight: bolder;
+  height: 60rpx;
+  font-size: 40rpx;
+}
+.userinfo-manage {
+  margin-top:10rpx;
+  padding: 5rpx;
+  font-size: 28rpx;
+  border: solid black 1rpx;
+  border-radius: 15rpx;
+}
+/* userinfo */
+.userbox {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 20rpx 40rpx 20rpx 40rpx;
+  padding-bottom: 20rpx;
+  border-radius: 15rpx;
+}
+.boxcontain {
+  display: flex;
+}
+.boxmain {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28rpx;
+}
+.boxtitle {
+  margin: 20rpx;
+}
+.boximg {
+  width: 84rpx;
+  height: 84rpx;
+  margin: 0 auto 20rpx auto;
+}

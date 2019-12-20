@@ -1,0 +1,20 @@
+<!--pages/fooddetails/fooddetails.wxml-->
+<view class="container">
+  <view class="food">红豆粥</view>
+  <view class="tips">
+    <view class="st">限时退　|　免预约</view>
+    <view class="sale">已售：7777</view>
+  </view>
+  <image class="img" mode='widthFix' src="../../image/banner1.jpg"></image>
+  <view class="box">
+    <text>粥品</text>
+    <text>红豆粥</text>
+  </view>
+  <view class="title">温馨提示</view>
+  <view class="box">
+    <text>最佳食用期</text>
+    <text>请趁热食用</text>
+    <text>店内无包间</text>
+  </view>
+  <button class="addcar" bindtap="addcar">添加至购物车</button>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class='main'>
+<!-- 数据列表 -->
+  <view class='cart_Title' wx:if='{{hasList}}'>
+    <view wx:for='{{carts}}' wx:key='{{index}}'>
+      <view class="carbox">
+      <!-- 全选反选按钮 -->
+          <icon wx:if='{{item.selected}}' type='success' color='red' bindtap='handleselectList' data-index='{{index}}'></icon>
+          <icon wx:else type='circle' bindtap='handleselectList' data-index='{{index}}'></icon>
+          <view class="foodbox" bindlongpress='handledel' data-index='{{index}}'>
+            <view class="fbl">
+              <image src="{{item.foodByFoodId.foodImg}}" class="fblimg"></image>
+            </view>
+            <view class="fbr">
+              <view class="fbrh">{{item.foodByFoodId.foodName}}</view>
+              <view class="fbrc">
+                <view class='count'>
+                  <view class='redus' data-index='{{index}}' bindtap='handleredus'>-</view>
+                  <view class='cart-count'>{{item.qty}}</view>
+                  <view class='add' data-index='{{index}}' bindtap='handleadd'>+</view>
+                </view>
+              </view>
+              <view class="fbrp">¥{{item.foodByFoodId.foodPrice}}</view>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+  <!-- 当没有数据时显示的内容 -->
+  <view wx:else class='delAfter'>{{deleteData}}</view>
+  <!-- 底部 -->
+  <view class='cart-bottom'>
+      <icon type='success' color='red' wx:if='{{selectAllStatus}}' bindtap='selectAll'></icon>
+      <icon type='circle' color='#ccc' wx:else bindtap='selectAll'></icon>
+      <view>全选</view>
+      <view class="del" bindtap="selectdel">删除</view>
+      <view class='total'>
+        合计：<text>￥{{totalPrice}}</text>
+      </view>
+      <button bindtap="tosettlement">去结算</button>
+  </view>
+</view>
+

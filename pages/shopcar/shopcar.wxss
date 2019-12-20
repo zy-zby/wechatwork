@@ -1,0 +1,169 @@
+/* pages/shopcar/shopcar.wxss */
+.carbox{
+  display: flex;
+  margin: auto;
+  width: 670rpx;
+  margin-top: 20rpx;
+}
+.carbox icon{
+  padding-top: 55rpx;
+  text-align: center;
+  width: 55rpx;
+  height: 80rpx;
+}
+.foodbox{
+  width: 610rpx;
+  height: 160rpx;
+  border: 1rpx solid #dfdfdf;
+  box-shadow: 5rpx 5rpx 2rpx #dfdfdf;
+  display: flex;
+  border-radius: 10rpx;
+}
+.fbl{
+  width: 210rpx;
+  text-align: center;
+  border-bottom-left-radius: 10rpx;
+  border-top-left-radius:10rpx; 
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.fblimg{
+  margin-top: 10rpx;
+  width: 190rpx;
+  height: 140rpx;
+  border-radius:10rpx;
+}
+.fbr{
+  padding-left: 10rpx;
+  width: 380rpx;
+  border-bottom-right-radius: 10rpx;
+  border-top-right-radius:10rpx;
+  display: flex;
+  flex-flow: column;
+  padding-top: 10rpx;
+}
+.fbrh{
+  height: 50rpx;
+  font-size: 30rpx;
+}
+.fbrc{
+  height: 50rpx;
+  font-size: 26rpx;
+}
+.fbrc .count{
+  display: flex;
+  height: 50rpx;
+}
+.fbrc .redus{
+  height: 40rpx;
+  border:1px solid #eee;
+  font-size: 40rpx;
+  line-height: 38rpx;
+}
+.fbrc .add{
+  height: 40rpx;
+  border:1px solid #eee;
+  font-size: 40rpx;
+  line-height: 38rpx;
+}
+.fbrc .cart-count{
+  padding: 5rpx;
+  height: 40rpx;
+  width: 80rpx;
+  text-align: center;
+}
+.fbrp{
+  height: 50rpx;
+  font-size: 34rpx;
+  color: rgb(240, 72, 72);
+}
+.main{
+  padding: 5px 0;
+  height: 600rpx;
+}
+.cart_Title{
+  margin:0 10px 0;
+  display: flex;
+  flex-flow: column;
+  width: 670rpx;
+  padding-bottom: 120rpx;
+}
+.head{
+  display: flex;
+  width: 660rpx;
+  text-align: center;
+}
+.options{
+  width: 100rpx;
+  text-align: center;
+  display: inline-block;
+}
+.foodimg{
+  width: 100rpx;
+}
+.cart-box{
+  padding-left: 13px;
+}
+.cart-title{
+  margin-left: 21px;
+}
+/* .cart-price{
+  margin-right: 10px;
+} */
+.count{
+  display: inline-block;
+  margin-right: 20px;
+}
+.cart-count{
+  padding: 10px;
+  height: 20rpx;
+}
+.delAfter{
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(231, 67, 67);
+}
+.redus{
+  height: 30rpx;
+  border:1px solid #eee;
+  padding: 0 5px;
+}
+.add{
+  height: 30rpx;
+  border:1px solid #eee;
+  padding: 0 5px;
+}
+.cart-bottom{
+  margin:0 10px 0;
+  width: 670rpx;
+  height: 80rpx;
+  display: flex;
+  position:fixed;
+  bottom: 0;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  line-height: 80rpx;
+  background: white;
+}
+.cart-bottom icon{
+  padding-top: 20rpx;
+  text-align: center;
+  width: 55rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+}
+.del{
+  color: rgb(240, 72, 72);
+  padding-left: 20rpx;
+}
+.total{
+  margin-left: 15px;
+  display: inline-block;
+}
+.total text{
+  color: rgb(240, 72, 72);
+}
+.cart-bottom button{
+  background: orange;
+  margin-right: 0;
+}

@@ -1,0 +1,55 @@
+<!--pages/myhome/myhome.wxml-->
+<view class='content'>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="userinfo-message">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-manage">账号管理 ></text>
+      </view>
+    </block>
+  </view>
+  <view class="userbox">
+    <text class="boxtitle">我的服务</text>
+    <view class="boxcontain">
+      <view class="boxmain">
+        <image class="boximg" src="../../image/dingdan.png"></image>
+        <text>订单</text>
+      </view>
+      <view class="boxmain">
+        <image class="boximg" src="../../image/shoucang.png"></image>
+        <text>收藏</text>
+      </view>
+      <view class="boxmain">
+        <image class="boximg" src="../../image/youhuiquan.png"></image>
+        <text>券包</text>
+      </view>
+      <view class="boxmain">
+        <image class="boximg" src="../../image/huiyuanka.png"></image>
+        <text>会员卡</text>
+      </view>
+    </view>
+  </view>
+  <view class="userbox">
+    <text class="boxtitle">其他服务</text>
+    <view class="boxcontain">
+      <view class="boxmain">
+        <image class="boximg" src="../../image/lingquan.png"></image>
+        <text>免费领券</text>
+      </view>
+      <view class="boxmain">
+        <image class="boximg" src="../../image/huodong.png"></image>
+        <text>活动一览</text>
+      </view>
+      <view class="boxmain">
+        <image class="boximg" src="../../image/yijianfankui.png"></image>
+        <text>意见反馈</text>
+      </view>
+      <view class="boxmain">
+        <image class="boximg" src="../../image/kefu.png"></image>
+        <text>客服电话</text>
+      </view>
+    </view>
+  </view>
+</view>
